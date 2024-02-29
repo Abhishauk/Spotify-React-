@@ -1,0 +1,257 @@
+/* style.css */
+
+.navbar {
+  background-color: #1e1f1f;
+  height: 10%;
+  position: fixed;
+  top: 2%;
+  left: 1%;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 1;
+
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.nav-item {
+  margin-bottom: 15px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-text {
+  margin-left: 5px;
+  font-size: 0.9rem;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.section {
+  background-color: #1e1f1f;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  top: 19%;
+  left: 1%;
+  width: 340px;
+  z-index: 0;
+  border-radius: 8px;
+  height: 400px;
+}
+
+.plus-icon {
+  margin-left: 127px;
+  margin-right: 15px;
+}
+
+.right-icon {
+  margin-right: 10px;
+}
+
+.search-icon {
+  margin-right: 176px;
+  margin-top: 10px
+}
+
+.menu-icon {
+  margin-right: 10px;
+}
+
+button {
+  background-color: #303130;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-top: 20px;
+}
+button:hover {
+  background-color: #9b9b9b;
+}
+
+.Recent {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.Recent img {
+  margin-right: 206px;
+}
+
+.Recent span {
+  font-size: 0.9rem;
+}
+.recent-search-song {
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+
+
+.menu-song {
+  width: 100%;
+  height: 300px;
+  border: 1px black;
+  margin-top: 40px;
+}
+.menu-song::-webkit-scrollbar {
+  width: 10px;
+
+}
+.menu-song li{
+  list-style-type: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s linear;
+}
+.menu-song li img{
+  width: 30px;
+  height: 30px;
+  margin-left: 25px;
+}
+.menu-song li h5{
+  font-size: 11px;
+  margin-left: 15px;
+  width: 170px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu-song li h5 .subtitle{
+  font-size: 9px;
+  color: #9b9b9b;
+}
+
+
+/* Media query for screens smaller than 768px (typical tablet size) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1e1f1f;
+    height: 12%;
+    position: fixed;
+    top: 2%;
+    left: 1%;
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1;
+  }
+
+  .navbar-nav {
+    /* Adjust navbar list styles for smaller screens */
+  }
+
+  .nav-item {
+    /* Adjust nav item styles for smaller screens */
+  }
+
+  .nav-link {
+    /* Adjust nav link styles for smaller screens */
+  }
+
+  .nav-icon {
+    /* Adjust nav icon styles for smaller screens */
+  }
+
+  .nav-text {
+    /* Adjust nav text styles for smaller screens */
+    margin-left: 5px;
+    font-size: 15px;
+  }
+
+  .section {
+    background-color: #1e1f1f;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 21%;
+    left: 1%;
+    width: 325px;
+    z-index: 0;
+    border-radius: 8px;
+  }
+
+  .section .nav-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 10px;
+  }
+
+  .section .nav-icon {
+    margin-right: 5px;
+  }
+
+  .section .plus-icon,
+  .section .right-icon {
+    display: none;
+
+  }
+
+  button {
+    background-color: #303130;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-top: 20px;
+  }
+}
+
+/* Media query for screens smaller than 576px (typical phone size) */
+@media screen and (max-width: 576px) {
+  .navbar {
+    /* Further adjust navbar styles for even smaller screens */
+  }
+
+  /* Adjust other styles as needed for smaller screens */
+}
